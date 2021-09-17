@@ -7,7 +7,7 @@ def create_folder(path):
 
 img_path = sys.argv[1]
 out = sys.argv[2]
-file_number = 4900
+file_number = int(sys.argv[3])
 
 img_list = os.listdir(img_path)
 img_list.sort()
