@@ -16,6 +16,7 @@ for count,image_name in enumerate(img_list):
     if count % file_number == 0:
         folder_id += 1
         create_folder(os.path.join(out,str(folder_id)))
+        print("Create folder {}".format(os.path.join(out,str(folder_id))))
     src = os.path.join(img_path,image_name)
     dst = "{}/{}/{}".format(out,folder_id,image_name)
-    os.copyfile(src,dst)
+    copyfile(src,dst)
